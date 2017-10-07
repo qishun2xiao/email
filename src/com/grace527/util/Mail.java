@@ -36,8 +36,8 @@ public class Mail extends HttpServlet{
 			String top = request.getParameter("m-topci");
 			String con = request.getParameter("m-con");
 			//用户信息   用户名  密码
-			String userName = "2490702388@qq.com";
-            String passWord = "xqhdahvozeodecbb";
+			String userName = "YOURMAIL@qq.com";
+            String passWord = "MAIL-PASSWORD";
 			//邮箱属性  邮件协议
 			Properties prop = new Properties();
 			prop.put("mail.smtp.auth", "true");
@@ -48,8 +48,8 @@ public class Mail extends HttpServlet{
 	        Authenticator authenticator = new Authenticator() {
 	            protected PasswordAuthentication getPasswordAuthentication() {
 	                // 用户名、密码
-	                String userName = "2490702388@qq.com";
-	                String passWord = "xqhdahvozeodecbb";
+	                String userName = "YOURMAIL@qq.com";
+	                String passWord = "MAIL-PASSWORD";
 	                return new PasswordAuthentication(userName, passWord);
 	            }
 	        };
